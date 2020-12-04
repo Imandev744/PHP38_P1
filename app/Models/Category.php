@@ -17,13 +17,13 @@ class Category extends Model
   protected $guarded=[];
 
 
+
+
     //mutators
-    public function setTitleAttribute($value){
-
-        $this->attributes['title']=$value;
-        return $this->attributes['slug']=Str::slug(Str::random(7)."-".$value);
+    public function setSlugAttribute($value)
+    {
+        $this->attributes['slug'] = Str::slug(Str::random(7) . '-' .  $this->attributes['title']);
     }
-
 
 
     //relations

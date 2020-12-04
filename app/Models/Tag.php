@@ -11,12 +11,16 @@ class Tag extends Model
     use HasFactory;
     public $timestamps=false;
 
-    //mutators
-    public function setTitleAttribute($value){
+    protected $guarded=[];
 
-        $this->attributes['title']=$value;
-        return $this->attributes['slug']=Str::slug(Str::random(7)."-".$value);
+
+
+    //mutators
+    public function setSlugAttribute($value)
+    {
+        $this->attributes['slug'] = Str::slug(Str::random(7) . '-' .  $this->attributes['title']);
     }
+
 
     //relations
     public function post()

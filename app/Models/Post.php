@@ -13,13 +13,10 @@ class Post extends Model
 
     protected $guarded = [];
 
-
     //mutators
-    public function setTitleAttribute($value)
+    public function setSlugAttribute($value)
     {
-
-        $this->attributes['title'] = $value;
-        return $this->attributes['slug'] = Str::slug(Str::random(7) . "-" . $value);
+        $this->attributes['slug'] = Str::slug(Str::random(7) . '-' .  $this->attributes['title']);
     }
 
 
