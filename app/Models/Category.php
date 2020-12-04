@@ -13,7 +13,8 @@ class Category extends Model
 
     //mutators
     public function setSlugAttribute($value){
-        return $this->attributes['slug']=Str::slug($this->attributes['title']);
+        $this->attributes['slug']=$value;
+        return $this->attributes['slug']=Str::random(7)."-".Str::slug($value);
     }
 
 
