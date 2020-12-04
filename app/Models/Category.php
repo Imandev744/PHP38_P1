@@ -4,17 +4,24 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Psy\Util\Str;
+use Illuminate\Support\Str;
+
 
 class Category extends Model
 {
     use HasFactory;
 
+  public $timestamps=false;
+
+
+  protected $guarded=[];
+
 
     //mutators
-    public function setSlugAttribute($value){
-        $this->attributes['slug']=$value;
-        return $this->attributes['slug']=Str::random(7)."-".Str::slug($value);
+    public function setTitleAttribute($value){
+
+        $this->attributes['title']=$value;
+        return $this->attributes['slug']=Str::slug(Str::random(7)."-".$value);
     }
 
 

@@ -14,7 +14,7 @@ class TagFactory extends Factory
     public function definition()
     {
         return [
-
+            'title'=>$this->faker->title
         ];
     }
 }

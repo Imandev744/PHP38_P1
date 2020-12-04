@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Schema;
 class CreateCategoryPostTable extends Migration
 {
     private $table ="category_post";
+
+
     public function up()
     {
         Schema::create('category_post', function (Blueprint $table) {

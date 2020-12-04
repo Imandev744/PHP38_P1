@@ -7,12 +7,13 @@ use Illuminate\Support\Facades\Schema;
 class CreateCategoriesTable extends Migration
 {
     private $table = "categories";
+
     public function up()
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $this->string('title');
-            $this->string('slug');
+            $table->string('title');
+            $table->string('slug');
         });
     }
 

@@ -8,6 +8,7 @@ class CreatePostTagTable extends Migration
 {
     private $table = "past_tag";
 
+
     public function up()
     {
         Schema::create('post_tag', function (Blueprint $table) {

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Psy\Util\Str;
+use Illuminate\Support\Str;
 
 class Post extends Model
 {
@@ -14,10 +14,14 @@ class Post extends Model
     protected $guarded=[];
 
 
+
     //mutators
-    public function setSlugAttribute($value){
-        return $this->attributes['slug']=Str::slug($this->attributes['title']);
+    public function setTitleAttribute($value){
+
+        $this->attributes['title']=$value;
+        return $this->attributes['slug']=Str::slug(Str::random(7)."-".$value);
     }
+
 
     //relations
 
@@ -26,11 +30,11 @@ class Post extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function tag()
+    public function tags()
     {
         return $this->belongsToMany(Tag::class);
     }
-    public function category()
+    public function categories()
     {
         return $this->belongsToMany(Category::class);
     }

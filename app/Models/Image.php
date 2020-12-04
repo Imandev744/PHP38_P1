@@ -4,18 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Psy\Util\Str;
+use Illuminate\Support\Str;
 
 class Image extends Model
 {
     use HasFactory;
 
+    public $timestamps=false;
 
-
-    //mutators
-    public function setSAltAttribute($value){
-        return $this->attributes['alt']=$value ?? $this->attributes['title'];
-    }
 
     //relations
 
