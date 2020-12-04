@@ -9,17 +9,17 @@ use Illuminate\Support\Str;
 
 class Post extends Model
 {
-    use HasFactory,SoftDeletes;
+    use HasFactory, SoftDeletes;
 
-    protected $guarded=[];
-
+    protected $guarded = [];
 
 
     //mutators
-    public function setTitleAttribute($value){
+    public function setTitleAttribute($value)
+    {
 
-        $this->attributes['title']=$value;
-        return $this->attributes['slug']=Str::slug(Str::random(7)."-".$value);
+        $this->attributes['title'] = $value;
+        return $this->attributes['slug'] = Str::slug(Str::random(7) . "-" . $value);
     }
 
 
@@ -34,6 +34,7 @@ class Post extends Model
     {
         return $this->belongsToMany(Tag::class);
     }
+
     public function categories()
     {
         return $this->belongsToMany(Category::class);
@@ -41,10 +42,8 @@ class Post extends Model
 
     public function image()
     {
-        return $this->morphOne(Image::class,'imageable');
+        return $this->morphOne(Image::class, 'imageable');
     }
-
-
 
 
 }

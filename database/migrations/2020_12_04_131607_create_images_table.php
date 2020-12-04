@@ -16,7 +16,7 @@ class CreateImagesTable extends Migration
             $table->string('title');
             $table->string('alt');
             $table->string('path');
-            $table->morphs('imagebale');
+            $table->morphs('imageable');
         });
     }
 

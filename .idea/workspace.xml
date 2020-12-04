@@ -3,20 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="33c6dca7-fc12-4b54-bd06-e5d60ecbaa29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Image.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/CategoryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CategoryFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/TagFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/TagFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_131344_create_tags_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_131344_create_tags_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_131502_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_131502_create_categories_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_131607_create_images_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_131607_create_images_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_131803_create_post_tag_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_131803_create_post_tag_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_132055_create_category_post_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_132055_create_category_post_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +166,7 @@
       <updated>1607078155868</updated>
       <workItem from="1607078157312" duration="12394000" />
       <workItem from="1607094628467" duration="9000" />
-      <workItem from="1607094668054" duration="1522000" />
+      <workItem from="1607094668054" duration="2964000" />
     </task>
     <servers />
   </component>
