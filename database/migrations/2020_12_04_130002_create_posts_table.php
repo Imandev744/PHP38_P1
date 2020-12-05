@@ -16,7 +16,7 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->string('content');
             $table->string('slug');
-            $table->foreignId('user_id')
+            $table->foreignId('author_id')
             ->refrence('id')
             ->on('users')
             ->cascadeOnDelete();

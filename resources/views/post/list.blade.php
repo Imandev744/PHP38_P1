@@ -2,14 +2,13 @@
 
 @push('css')
 
-
 @endpush
 
 @section('container')
 
 <div class="container" style="margin-top: 50px">
     <h2> All the posts</h2>
-    <table class="table table-hover">
+    <table class="table table-hover"  style="text-align: center">
         <thead>
         <tr>
             <th>ID</th>
@@ -17,16 +16,19 @@
             <th>Author</th>
             <th>Category</th>
             <th>Tags</th>
-            <th>Action</th>
+            <th>Actions</th>
         </tr>
         </thead>
         <tbody>
 
         @foreach($posts as $post)
+
+{{--            {{dd($post->author)}}--}}
         <tr>
                 <td> {{$post->id}}</td>
                 <td> {{$post->title}}</td>
-                <td>{{$post->author}}</td>
+
+                <td>{{$post->author->name}}</td>
 
                 <td> @foreach($post->tags as $tag)
                             {{$tag->title}}
@@ -38,7 +40,10 @@
                     @endforeach
                 </td>
 
-                <td>    </td>
+                <td>
+                    <button type="button" class="btn btn-success">Show</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </td>
         </tr>
 
         @endforeach
