@@ -8,8 +8,8 @@
 
 <div class="container" style="margin-top: 50px">
     <h2> All the posts</h2>
-    <table class="table table-hover"  style="text-align: center">
-        <thead>
+    <table class="table"  style="text-align: center">
+        <thead class="thead-dark">
         <tr>
             <th>ID</th>
             <th>Title</th>
@@ -24,7 +24,7 @@
         @foreach($posts as $post)
 
 {{--            {{dd($post->author)}}--}}
-        <tr>
+        <tr >
                 <td> {{$post->id}}</td>
                 <td> {{$post->title}}</td>
 

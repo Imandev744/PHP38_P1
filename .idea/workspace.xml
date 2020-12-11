@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33c6dca7-fc12-4b54-bd06-e5d60ecbaa29" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php38_cms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php38_cms.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_04_130002_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_130002_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/post/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/post/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,14 +180,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../private-forum" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tour" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="AtomAssocConfig" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
+      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="XML" />
       <method v="2" />
     </configuration>
   </component>
@@ -203,7 +203,10 @@
       <workItem from="1607094628467" duration="9000" />
       <workItem from="1607094668054" duration="8070000" />
       <workItem from="1607107922832" duration="3505000" />
-      <workItem from="1607153701378" duration="16960000" />
+      <workItem from="1607153701378" duration="23875000" />
+      <workItem from="1607259598773" duration="1833000" />
+      <workItem from="1607349869440" duration="5346000" />
+      <workItem from="1607682951797" duration="164000" />
     </task>
     <servers />
   </component>
